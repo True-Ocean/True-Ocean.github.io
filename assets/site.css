@@ -24,3 +24,9 @@
 .project-eq i:nth-child(4) { height: 88%; }
 .project-eq i:nth-child(5) { height: 34%; }
 @media (max-width: 780px) { .brand-logo { height: 84px; margin-block: -26px; } .hero { min-height: 540px; } .hero-poster { width: 66vw; opacity: .4; } }
+
+/* Persistent navigation */
+.site-shell { overflow: visible; }
+.site-header { position: sticky; top: 0; z-index: 20; background: rgba(9, 10, 11, .97); box-shadow: 0 8px 20px rgba(0, 0, 0, .22); }
+section[id] { scroll-margin-top: 140px; }
+.site-header { overflow: hidden; }
