@@ -28,7 +28,7 @@
   radial-gradient(circle at 50% 42%, rgba(225, 186, 100, .16), transparent 31%),
   linear-gradient(160deg, #172219 0%, #101712 58%, #0c100d 100%); }
 .project-keiba > * { position: relative; z-index: 1; }
-.project-horse { position: absolute; z-index: 0; top: 18px; right: -22px; display: block; width: min(88%, 220px); height: 238px; background: url("keiba-horse.png") center / contain no-repeat; pointer-events: none; opacity: .94; filter: brightness(.9) saturate(.82) sepia(.08) drop-shadow(0 14px 20px rgba(0, 0, 0, .32)); mask-image: linear-gradient(to bottom, #000 0 53%, rgba(0, 0, 0, .76) 64%, rgba(0, 0, 0, .22) 81%, transparent 98%); transform-origin: 64% 40%; transition: opacity .25s ease, transform .25s ease; }
+.project-horse { position: absolute; z-index: 0; top: 18px; right: -22px; display: block; width: min(88%, 220px); height: 238px; background: url("horse-racing-mark.png") center / contain no-repeat; pointer-events: none; opacity: .94; filter: brightness(.9) saturate(.82) sepia(.08) drop-shadow(0 14px 20px rgba(0, 0, 0, .32)); mask-image: linear-gradient(to bottom, #000 0 53%, rgba(0, 0, 0, .76) 64%, rgba(0, 0, 0, .22) 81%, transparent 98%); transform-origin: 64% 40%; transition: opacity .25s ease, transform .25s ease; }
 .project-keiba:hover .project-horse { opacity: 1; transform: translateY(-3px) scale(1.025); }
 @media (max-width: 780px) {
   .brand { padding-inline-end: 2.75rem; }
