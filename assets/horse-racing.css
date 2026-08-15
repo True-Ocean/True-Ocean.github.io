@@ -61,19 +61,36 @@
   max-width: 720px;
   margin-block: 22px 30px;
   font-size: clamp(3.6rem, 8vw, 7.3rem);
+  letter-spacing: -.04em;
 }
 
 .racing-hero-line {
-  display: inline-block;
+  display: block;
   white-space: nowrap;
+  word-break: keep-all;
+  line-break: strict;
 }
 
 .racing-hero h1 em {
   color: var(--gold);
+  font-style: normal;
 }
 
 .racing-hero .lead {
   max-width: 620px;
+}
+
+.racing-hero-note {
+  max-width: 620px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: .82rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.racing-hero-note-accent {
+  color: var(--gold-bright);
 }
 
 .racing-scroll {
@@ -458,7 +475,8 @@
   }
 
   .racing-hero h1 {
-    font-size: clamp(2.6rem, 11.5vw, 4.2rem);
+    /* 「新しい景色を。」7文字がコンテナ幅に必ず収まるようにする */
+    font-size: min(3.2rem, calc((100vw - 48px) / 7.15));
   }
 
   .racing-hero .lead br {
