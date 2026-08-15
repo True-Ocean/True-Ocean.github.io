@@ -3,6 +3,9 @@
   --turf-bright: #6d975f;
   --turf-dark: #0c140f;
   --cream: #f0ede6;
+  /* 試し: アクセント文字をゴールドから芝グリーンへ */
+  --gold: #4ec86a;
+  --gold-bright: #8ef0a0;
   background: var(--ink);
 }
 
@@ -131,41 +134,55 @@
   pointer-events: none;
 }
 
+.racing-ornament {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+}
+
+.racing-ornament-glow {
+  inset: 4% -2% 2% 4%;
+  background:
+    radial-gradient(ellipse at 46% 43%, rgba(242, 212, 154, .15), transparent 34%),
+    radial-gradient(ellipse at 62% 64%, rgba(109, 151, 95, .14), transparent 52%);
+  filter: blur(22px);
+}
+
+.racing-ornament-ring {
+  inset: 12% -8% 8% 28%;
+  border-radius: 68% 32% 60% 40% / 34% 68% 32% 66%;
+  background: linear-gradient(
+    145deg,
+    rgba(242, 212, 154, .12),
+    rgba(216, 173, 97, .045) 42%,
+    rgba(53, 92, 58, .1) 68%,
+    transparent
+  );
+  filter: blur(18px);
+  transform: rotate(-7deg);
+}
+
+.racing-ornament-arc {
+  inset: 30% -12% 3% 42%;
+  border-radius: 42% 58% 30% 70% / 62% 34% 66% 38%;
+  background: linear-gradient(
+    128deg,
+    rgba(216, 173, 97, .09),
+    rgba(109, 151, 95, .07) 48%,
+    transparent 76%
+  );
+  filter: blur(24px);
+  transform: rotate(9deg);
+}
+
 .racing-horse {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   inset: 5% 1% 10% 8%;
   background: url("horse-racing-mark.png") center / contain no-repeat;
   opacity: .83;
   filter: drop-shadow(0 20px 34px rgba(0, 0, 0, .38));
 }
-
-.racing-track {
-  position: absolute;
-  z-index: 1;
-  right: -8%;
-  width: 70%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(216, 173, 97, .72));
-  transform: rotate(-9deg);
-  transform-origin: right;
-}
-
-.racing-track::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: -2px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--gold);
-  box-shadow: 0 0 14px rgba(216, 173, 97, .72);
-}
-
-.racing-track-one { top: 33%; }
-.racing-track-two { top: 50%; width: 58%; opacity: .68; }
-.racing-track-three { top: 67%; width: 46%; opacity: .38; }
 
 .racing-apps {
   padding-block: 112px 126px;
