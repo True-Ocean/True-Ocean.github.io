@@ -63,6 +63,11 @@
   font-size: clamp(3.6rem, 8vw, 7.3rem);
 }
 
+.racing-hero-line {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .racing-hero h1 em {
   color: var(--gold);
 }
@@ -453,7 +458,7 @@
   }
 
   .racing-hero h1 {
-    font-size: clamp(3rem, 15vw, 5rem);
+    font-size: clamp(2.6rem, 11.5vw, 4.2rem);
   }
 
   .racing-hero .lead br {
