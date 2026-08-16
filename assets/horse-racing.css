@@ -361,19 +361,6 @@
   line-height: 1.8;
 }
 
-.racing-return {
-  padding-block: 112px;
-  text-align: center;
-  border-top: 1px solid var(--line);
-  background:
-    radial-gradient(circle at 50% 25%, rgba(216, 173, 97, .14), transparent 34%),
-    var(--night);
-}
-
-.racing-return h2 {
-  margin: 16px 0 12px;
-}
-
 @media (max-width: 980px) {
   .racing-hero-art {
     right: -5%;
@@ -485,8 +472,7 @@
     margin-top: 16px;
   }
 
-  .racing-about,
-  .racing-return {
+  .racing-about {
     padding-block: 78px;
   }
 
