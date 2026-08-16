@@ -24,6 +24,15 @@
 .project-eq i:nth-child(3) { height: 52%; }
 .project-eq i:nth-child(4) { height: 88%; }
 .project-eq i:nth-child(5) { height: 34%; }
+/* Spectrum look: remove eq-spectrum from index.html to restore the gold bars. */
+.eq-spectrum { background: radial-gradient(circle at 50% 40%, #1a1a1a, #0b0b0b 62%); }
+.eq-spectrum .project-eq { opacity: .96; }
+.eq-spectrum .project-eq i { box-shadow: none; }
+.eq-spectrum .project-eq i:nth-child(1) { height: 38%; background: linear-gradient(180deg, #e89c31, #b56e1f 55%, #7a5016); box-shadow: 0 0 22px rgba(232, 156, 49, .32); }
+.eq-spectrum .project-eq i:nth-child(2) { height: 78%; background: linear-gradient(180deg, #69eb9a, #3cb56e 55%, #2d7e4e); box-shadow: 0 0 22px rgba(105, 235, 154, .28); }
+.eq-spectrum .project-eq i:nth-child(3) { height: 62%; background: linear-gradient(180deg, #56ccff, #3a9fd4 55%, #2b6f93); box-shadow: 0 0 22px rgba(86, 204, 255, .28); }
+.eq-spectrum .project-eq i:nth-child(4) { height: 92%; background: linear-gradient(180deg, #ff6dd6, #d24eaa 55%, #8f3677); box-shadow: 0 0 22px rgba(255, 109, 214, .30); }
+.eq-spectrum .project-eq i:nth-child(5) { height: 48%; background: linear-gradient(180deg, #d4b982, #a8905e 55%, #726244); box-shadow: 0 0 22px rgba(212, 185, 130, .22); }
 .project-keiba { position: relative; overflow: hidden; background:
   radial-gradient(circle at 50% 42%, rgba(225, 186, 100, .16), transparent 31%),
   linear-gradient(160deg, #172219 0%, #101712 58%, #0c100d 100%); }
