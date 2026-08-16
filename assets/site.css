@@ -40,9 +40,10 @@
 /* Persistent navigation */
 .site-shell { overflow: visible; }
 .site-header { position: sticky; top: 0; z-index: 20; background: rgba(9, 10, 11, .97); box-shadow: 0 8px 20px rgba(0, 0, 0, .22); }
-section[id] { scroll-margin-top: 140px; }
+/* Match sticky header height so section top borders tuck under it (not a second line). */
+section[id] { scroll-margin-top: 75px; } /* header is 77px on desktop */
 @media (max-width: 780px) {
-  /* Stacked header is taller; tuck the section top edge behind it. */
-  section[id] { scroll-margin-top: 172px; }
+  /* Stacked nav is ~97px; hide the 1px section border under the header. */
+  section[id] { scroll-margin-top: 95px; }
 }
 .site-header { overflow: hidden; }
