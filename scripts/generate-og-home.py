@@ -102,21 +102,6 @@ def draw_tracked(draw, xy, text, font, fill, tracking=0):
     return x
 
 
-def wrap_text(text, font, max_width):
-    lines, current = [], ""
-    for ch in text:
-        trial = current + ch
-        if font.getlength(trial) <= max_width:
-            current = trial
-        else:
-            if current:
-                lines.append(current)
-            current = ch
-    if current:
-        lines.append(current)
-    return lines
-
-
 def load_banner(path, height=100, max_width=700):
     im = Image.open(path).convert("RGBA")
     gray = im.convert("L")
@@ -215,8 +200,11 @@ def main():
     draw_tracked(draw, (x, y), line2_rest, title_font, PAPER, tracking=tracking)
     y += 92
 
-    lead = "ChatNoir Studioは、遊び心と実用性をあわせ持つ様々なアプリケーションを個人開発しています。"
-    for line in wrap_text(lead, lead_font, 560):
+    for line in (
+        "ChatNoir Studioは、",
+        "遊び心と実用性をあわせ持つ",
+        "様々なアプリケーションを個人開発しています。",
+    ):
         draw.text((x0, y), line, font=lead_font, fill=MUTED)
         y += 34
 
