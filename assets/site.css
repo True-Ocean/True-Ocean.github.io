@@ -27,6 +27,7 @@
 .project-rs-art img { display: block; width: 100%; height: auto; background: transparent; transition: transform .25s ease; }
 .project-retrosound:hover { border-color: rgba(196, 255, 51, .62); }
 .project-retrosound:hover .project-rs-art img { transform: translateY(-3px) scale(1.03); }
+.project-cat-art { grid-row: 2; justify-self: center; align-self: center; width: min(100%, 144px); height: auto; margin-block: 16px; border-radius: 18px; }
 .project-keiba { position: relative; overflow: hidden; background:
   radial-gradient(circle at 50% 42%, rgba(225, 186, 100, .16), transparent 31%),
   linear-gradient(160deg, #172219 0%, #101712 58%, #0c100d 100%); }
